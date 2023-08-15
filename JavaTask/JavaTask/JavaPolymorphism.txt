@@ -1,0 +1,29 @@
+class Vehicle {
+    public void honk() {
+        System.out.println("The car is honking");
+    }
+}
+
+class Car1 extends Vehicle {
+    public void honk() {
+        System.out.println("Car1 sound : PON! PON!");
+    }
+}
+
+class Car2 extends Vehicle {
+    public void honk() {
+        System.out.println("Car2 sound : PETT! PETT!");
+    }
+}
+
+class Main {
+    public static void main(String[] args){
+        Vehicle myVehicle = new Vehicle();
+        Vehicle myCar1 = new Car1();
+        Vehicle myCar2 = new Car2();
+        myVehicle.honk();
+        myCar1.honk();
+        myCar2.honk();
+        
+    }
+}

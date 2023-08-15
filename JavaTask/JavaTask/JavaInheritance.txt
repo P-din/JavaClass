@@ -1,0 +1,15 @@
+class Vehicle {
+    protected String brand = "Tesla";
+    public void honk() {
+        System.out.println("PON! PON!");
+    }
+}
+
+class Car extends Vehicle {
+    private String modelname = "Model Y";
+    public static void main(String[] args){
+        Car myCar = new Car();
+        myCar.honk();
+        System.out.println(myCar.brand + " " + myCar.modelname);
+    }
+}
